@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        Log.d(TAG,"Vuelvo a estar visible")
+        Log.d(TAG,"Vuelvo a estar visible, me muestro en logcat")
+        Log.e(TAG,"Puede ser que algo no funcione al volver iniciar la app.")
     }
 
     override fun onStop() {
@@ -39,5 +40,6 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG,"La actividad muere.")
+
     }
 }
